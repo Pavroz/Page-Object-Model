@@ -8,9 +8,9 @@ from selenium.webdriver.support import expected_conditions as EC
 class LoginPage:
     """Класс для страницы логина"""
     def __init__(self, driver):
+        """Локаторы"""
         self.driver = driver
         self.url = "https://www.saucedemo.com/"
-        # Локаторы
         self.username_field = (By.CSS_SELECTOR, '#user-name')
         self.password_field = (By.CSS_SELECTOR, '#password')
         self.login_button = (By.CSS_SELECTOR, 'input[name="login-button"]')
